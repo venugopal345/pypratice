@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>performance</title>
+    <style>
+        select {
+            appearance: none;
+            outline: 0;
+            background: Tomato;
+            background-image: none;
+            width: 40%;
+            height: 40%;
+            color: black;
+            cursor: pointer;
+            border: 1px solid black;
+            border-radius: 3px;
+        }
+
+        .select {
+            position: relative;
+            display: block;
+            width: 10em;
+            height: 2em;
+            line-height: 3;
+            overflow: hidden;
+            border-radius: .25em;
+            padding-bottom: 10px;
+
+        }
+
+        h1 {
+            color: Tomato;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        nav {
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 80px;
+            padding: 10px 40px;
+            box-sizing: border-box;
+            border-bottom: 1px solid #fff;
+            position:fixed;
+            background: #fff;
+        }
+
+        nav .logo {
+            padding-left: 80px;
+            padding-top: 20px;
+            height: 80px;
+            float: left;
+            font-size: 30px;
+            font-weight: bold;
+            text-transform: uppercase;
+            color:black;
+        }
+
+        nav .span {
+            color: orangered;
+        }
+        nav ul {
+            list-style: none;
+            float: right;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            
+        }
+       
+        
+        nav ul li a {
+            line-height: 80px;
+            padding: 20px 10px;
+            color:black;
+            text-decoration: none;
+            font-size: 15px;
+            font-weight: bold;
+            text-transform: uppercase;
+            transition: 1s;
+            
+        }
+  
+
+        nav ul li a:hover {
+         /* background:rgb(0,0,0,0.7); */
+         /* border-radius: 6px; */
+         /* border-bottom: 4px solid black; */
+         color: orangered;
+     }
+
+        .section {
+            width: 100%;
+            height: 50vh;
+            background: rgba(0, 0, 0, 0.7) url("../static/image/company.jpg");
+            background-size: cover;
+            background-position: center;
+            background-blend-mode: darken;
+
+
+        }
+
+        .ch {
+            padding-top: 300px;
+
+        }
+
+        .col-md-6-col-lg-4 {
+            font-size: xx-large;
+            
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .container {
+            height: 100vh;
+            /* position: relative; */
+            padding-top: 120px;
+        }
+
+        .text {
+            text-align: center;
+            padding: 10px 50px;
+            color: #fff;
+        }
+
+        .text h2 {
+            font-size: 50px;
+            margin-bottom: 10px;
+        }
+
+        .class {
+            color: orangered;
+        }
+
+        .ch {
+            padding-top: 100px;
+            font-size: 100px;
+        }
+        .h1{
+            text-align: center;
+            margin-top: 0px;
+            margin-bottom: 0px;
+            padding-top: 100px; 
+            font-size: 50px;
+        }
+        .action{
+            color: orangered;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- ***** Preloader Start ***** -->
+    <div id="js-preloader" class="js-preloader">
+        <div class="preloader-inner">
+            <span class="dot"></span>
+            <div class="dots">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+    <!-- ***** Preloader End ***** -->
+
+
+    <!-- ***** Header Area Start ***** -->
+    <nav>
+        <div class="logo">FAKE JOB <span class="span">POST</span></div>
+        <ul>
+            <li><a href="/">HOME</a></li>
+            <li><a href="/login">LOGIN</a></li>
+            <li><a href="/fake">FRAUDULENT JOB POST </a></li>
+            <li><a href="/text">TEXT_PREDICTION </a></li>
+            <li><a href="/chart">CHART </a></li>
+            <li><a href="/performance" class="action">PERFORMANCE </a></li>
+
+        </ul>
+    </nav>
+
+
+
+
+
+    <!-- ***** Our Classes Start ***** -->
+    <section class="section" id="our-classes">
+        <div class="container">
+            <br>
+            <br>
+            <br>
+
+            <section>
+                <div class="container1">
+                    <div class="text">
+                        <h2> FAKE JOB POST <span class="class"> PREDICITON</span></h2>
+                    </div>
+
+                    <section class="section1" id="our-classes">
+                        <div class="container1">
+                            <br>
+                            <br>
+                            <br>
+
+                            <section class='tabs-content'>
+                                <div class="row">
+
+
+
+
+
+                                    <div class="section-title">
+                                        <div class="col-md-6-col-lg-10" style="margin-left:0px">
+                                            <h2 class="h1">PERFORMANCE ANALYSIS</h2>
+                                        </div>
+
+                                        <body>
+                                            <div><span style="margin-left:480px;color:green">
+                                                    <font size="12">Precision and recall</font>
+                                            </div>
+                                            <br>
+                                            <br>
+                                            <div><span style="margin-left:480px;color:black">
+                                                    <font size="12"> Recall Precision </font>
+                                            </div>
+                                            </br></br>
+                                            <div><span style="margin-left:50px;color:black">
+                                                    <font size="12">Fake(0) </font>
+                                                    <span style="margin-left:280px;color:black">
+                                                        <font size="12">0.98 1.00 </font>
+                                            </div>
+                                            </br>
+                                            </br>
+                                            <div><span style="margin-left:50px;color:black">
+                                                    <font size="12">Legit(1)</font>
+                                                    <span style="margin-left:300px;color:black">
+                                                        <font size="12">0.43 0.84 </font>
+                                            </div>
+
+
+                                    </div>
+                                    </br>
+                                    </br>
+                                    </br>
+
+
+                                    <div class="col-lg-8 mx-auto">
+                                        <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
+
+
+                                        <div><span style="margin-left:170px;color:red">
+                                                <font size="12">Confusion Matrix</font>
+                                        </div>
+                                        </br>
+                                        </br>
+
+                                        <center>
+                                            <div><img style="margin-left:60px;width:800px;height:500px;padding-bottom: 50px;"
+                                                    src="../static/image/download.png" </div>
+                                        </center>
+
+
+
+                                    </div>
+
+
+
+</body>
+
+
+
+</div>
+
+
+
+
+</section>
+</div>
+</section>
+<!-- ***** Our Classes End ***** -->
+
+<!-- ***** Footer Start ***** -->
+<footer>
+    <div class="container1">
+        <div class="row">
+            <div class="col-lg-12">
+                <p>
+
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</body>
+
+</html>

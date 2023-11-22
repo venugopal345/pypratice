@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGIN</title>
+    <style>
+       body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        nav {
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 80px;
+            padding: 10px 50px;
+            box-sizing: border-box;
+            /* background: rgba(0, 0, 0, 0.1); */
+            border-bottom: 1px solid #fff;
+            position:fixed;
+            background: #fff;
+
+        }
+        nav .logo {
+            /* padding: 22px 20px; */
+            padding-left: 80px;
+            padding-top: 20px;
+            height: 80px;
+            float: left;
+            font-size: 30px;
+            font-weight: bold;
+            text-transform: uppercase;
+            color:black;
+        }
+
+        nav .span {
+            color: orangered;
+        }
+        nav ul {
+            list-style: none;
+            float: right;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            
+        }
+       
+        
+        nav ul li a {
+            line-height: 80px;
+            padding: 50px 40px;
+            color:black;
+            text-decoration: none;
+            font-size: 15px;
+            font-weight: bold;
+            text-transform: uppercase;
+            transition: 1s;
+            
+        }
+  
+
+        nav ul li a:hover {
+         /* background:rgb(0,0,0,0.7); */
+         /* border-radius: 6px; */
+         /* border-bottom: 4px solid black; */
+         color: orangered;
+     }
+     section {
+            width: 100%;
+            height: 50vh;
+            background:rgba(0,0,0,0.7) url("../static/image/company.jpg");
+            background-size: cover;
+            background-position: center;
+            background-blend-mode: darken;
+      
+        } 
+        *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .container{
+        height: 100vh;
+        /* position: relative; */
+        padding-top: 180px;
+      }
+      .text{
+        text-align: center;
+        padding: 10px 50px;
+        color:#fff;
+      }
+      .text h2{
+        font-size: 50px;
+        margin-bottom: 10px;
+      }
+      .class{
+        color: orangered;
+      }
+      .up{
+        color: orangered;
+        padding-bottom: 40px;
+        padding-left: 10px;
+        width: 90%;
+      }
+      .lognform{
+        text-align: center;
+        padding-bottom: 80px;
+        padding-left: 10px;
+        width: 90%;
+        animation: down-up 2s ease 1;
+        }
+        @keyframes down-up{
+          0%{
+          transform:translateY(400px);
+          }
+          100%{
+            transform:translateY(0px);
+          }
+        }
+        
+        h1{
+        color: orangered;
+        padding-top: 40px;
+      }
+      .row{
+        padding-top: 40px;
+        
+      }
+      .btn{
+        padding-top: 50px;
+      }
+      .sub{
+        background-color: orangered;
+        color: #fff;
+        width: 100px;
+        height: 30px;
+        border-radius: 7px;
+        font-weight: bold;
+        letter-spacing: 0.2em;
+        transition: 1s fade;
+    }
+    .sub:hover{
+        color: orangered;
+        background-color: white;
+        width: 150px;
+        box-shadow: 5px 5px 20px black;
+        cursor: pointer;
+    }
+    .box{
+        width: 15%;
+        height: 5vh;
+        color:black
+    }
+    .an{
+      padding-top: 30px;
+    }
+    .action{
+          color: orangered;
+        }
+    
+
+    </style>
+
+
+</head>
+<body>
+       <nav>
+        <div class="logo">FAKE JOB <span class="span">POST</span></div>
+        <ul>
+            <li><a href="/" >HOME</a></li>
+            <li><a href="/login" class="action">LOGIN</a></li>
+            <li><a href="/loginaction">UPLOAD</a></li>
+            <li><a href="/preview">PREVIEW</a></li>
+        </ul>
+    </nav>
+  
+
+     <section>
+    <div class="container">
+        <div class="text">
+            <h2> FAKE JOB POST <span class="class"> PREDICITON</span></h2>
+        </div>
+    </div>
+</section>
+<form action="/loginaction"method="POST" autocomplete="off">
+    <div class="lognform">
+        <h1>LOGIN</h1>
+        <div class="row">
+            <h2>Username</h2>
+            <input type="text"class="box" id="uname"   placeholder="username"name="username"/>
+        </div>
+        <div class="row">
+            <h2>Password</h2>
+            <input type="password"class="box" id="pwd"  pattern="[a-zA-Z0-9@]{6,12}" placeholder="password"name="password"/>
+        </div>
+        <div class="btn">
+           <input type="submit" class="sub"value="LOGIN"/>
+        </div>
+        <div class="an">
+          Doesn't have an account? <a href="/register"> Create an account. </a>
+        </div>
+    </div>
+</form>
+
+
+</body>
+</html>
